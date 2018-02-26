@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Ejercicio 5</title>
+  </head>
+  <style>
+    div {
+      box-sizing: border-box;
+    }
+    .imagenProducto {
+      max-width: 100%;
+      max-height: 100%;
+      z-index: -1;
+    }
+    #imagenProducto {
+      position: relative;
+    }
+    .product {
+      height: 400px;
+      width: 200px;
+      position: relative;
+      z-index: 10;
+      border: 2px solid grey;
+      overflow: hidden;
+    }
+    .etiqueta-venta {
+      font-size: 12px;
+      color: white;
+      background: #f13340;
+      padding: 2px 0 2px;
+      width: 250px;
+      text-align: center;
+      display: block;
+      position: absolute;
+      left: -80px;
+      top: 10px;
+      transform: rotate(-30deg);
+    }
+    .etiqueta-despacho48hrs {
+      color: white;
+      background: #f13340;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      font-family: "Helvetica"; "Verdana"; seriff;
+      text-align: center;
+    }
+    #horaslinea1 {
+      font-size: 10px;
+      margin: 8px 0px 0px 0px;
+    }
+    #horaslinea2 {
+      font-size: 9px;
+      margin: 5px;
+    }
+    .descripcionProducto {
+      font-family: "Helvetica"; "Verdana"; seriff;
+      color: grey;
+    }
+    .botonComprar {
+      height: 40px;
+      width: 100%;
+      position: absolute;
+      bottom: 0px;
+      background-color: #f13340;
+      color: white;
+      text-align: center;
+      font-family: "Helvetica"; "Verdana"; seriff;
+    }
+
+  </style>
+  <body>
+    <div class="product">
+      <div id="imagenProducto">
+          <img class="imagenProducto" src="3dglasses.jpg" alt="Lentes 3D Oferta!!">
+          <div class="etiqueta-despacho48hrs">
+            <p id="horaslinea1">48hrs</p>
+            <p id="horaslinea2">Despacho</p>
+          </div>
+      </div>
+
+      <div class="descripcionProducto">
+        <p>Lentes 3D</p>
+        <ul>
+          <li>Modelo 1963</li>
+          <li>Especial para 3D</li>
+        </ul>
+      </div>
+      <div class="botonComprar">
+        <p>Comprar</p>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Banderas</title>
+    <style>
+      div {
+        box-sizing: border-box;
+      }
+      .banderaresponsive {
+        width: 80%;
+        height: 48vw;
+        border: 1px solid black;
+        position: relative;
+        margin: 10%;
+      }
+      .espanha1 {
+        width: 100%;
+        height: 30%;
+        background-color: red;
+      }
+      .espanha2 {
+        width: 100%;
+        height: 40%;
+        background-color: yellow;
+      }
+      .denmarkbox {
+        width: 24%;
+        height: 40%;
+        background-color: red;
+        position: absolute;
+      }
+      .denmarksquare {
+        width: 64%;
+        height: 40%;
+        background-color: red;
+        position: absolute;
+      }
+      #denmark1 {
+        top: 0px;
+        left: 0px;
+      }
+      #denmark2 {
+        bottom: 0px;
+        left 0px;
+      }
+      #denmark3 {
+        top: 0px;
+        right: 0px;
+      }
+      #denmark4 {
+        right: 0px;
+        bottom: 0px;
+      }
+      #emiratos1 {
+        width: 20%;
+        height: 100%;
+        background-color: red;
+      }
+      .emiratosbox {
+        width: 80%;
+        height: 33.33%;
+        position: absolute;
+      }
+      #emiratos2{
+        background-color: green;
+        right: 0px;
+        top: 0px;
+      }
+      #emiratos3 {
+        background-color: black;
+        bottom: 0px;
+        right: 0px;
+      }
+      .japanball {
+        position: absolute;
+        border-radius: 100%;
+        height: 50%;
+        width: 30%;
+        background-color: red;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="banderaresponsive">
+      <div class="espanha1"></div>
+      <div class="espanha2"></div>
+      <div class="espanha1"></div>
+    </div>
+    <div class="banderaresponsive">
+      <div class="denmarkbox" id="denmark1"></div>
+      <div class="denmarkbox" id="denmark2"></div>
+      <div class="denmarksquare" id="denmark3"></div>
+      <div class="denmarksquare" id="denmark4"></div>
+    </div>
+    <div class="banderaresponsive">
+      <div id="emiratos1"></div>
+      <div class="emiratosbox" id="emiratos2"></div>
+      <div class="emiratosbox" id="emiratos3"></div>
+    </div>
+    <div class="banderaresponsive">
+      <div class="japanball"></div>
+    </div>
+  </body>
+</html>
